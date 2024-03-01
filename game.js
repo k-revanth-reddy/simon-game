@@ -77,3 +77,10 @@ function startOver() {
   gamePattern = [];
   started = false;
 }
+$("button").click(function() {
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
